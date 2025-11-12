@@ -67,10 +67,30 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\animate.css" />
+    <Content Include="assets\css\bootstrap-5.0.0-beta1.min.css" />
+    <Content Include="assets\css\glightbox.min.css" />
     <Content Include="assets\css\landing.css" />
+    <Content Include="assets\css\lindy-uikit.css" />
+    <Content Include="assets\css\LineIcons.2.0.css" />
     <Content Include="assets\css\login.css" />
+    <Content Include="assets\css\tiny-slider.css" />
+    <Content Include="assets\fonts\LineIcons.svg" />
+    <Content Include="assets\img\about\about-4\about-img.svg" />
+    <Content Include="assets\img\clients\brands.svg" />
+    <Content Include="assets\img\favicon.svg" />
+    <Content Include="assets\img\hero\hero-5\hero-bg.svg" />
+    <Content Include="assets\img\hero\hero-5\hero-img.svg" />
+    <Content Include="assets\img\logo\logo.svg" />
+    <Content Include="assets\js\bootstrap-5.0.0-beta1.min.js" />
+    <Content Include="assets\js\count-up.min.js" />
     <Content Include="assets\js\form-utils.js" />
+    <Content Include="assets\js\glightbox.min.js" />
+    <Content Include="assets\js\imagesloaded.min.js" />
     <Content Include="assets\js\login.js" />
+    <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\tiny-slider.js" />
+    <Content Include="assets\js\wow.min.js" />
     <Content Include="Default.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="SignUp.aspx" />
@@ -101,6 +121,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\fonts\LineIcons.eot" />
+    <Content Include="assets\fonts\LineIcons.ttf" />
+    <Content Include="assets\fonts\LineIcons.woff" />
+    <Content Include="assets\fonts\LineIcons.woff2" />
+    <Content Include="assets\img\.DS_Store" />
+    <Content Include="assets\img\about\.DS_Store" />
+    <Content Include="assets\js\.DS_Store" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

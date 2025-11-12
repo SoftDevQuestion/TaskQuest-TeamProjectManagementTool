@@ -67,7 +67,7 @@
 
                 <button type="submit" class="login-btn material-btn">
                     <div class="btn-ripple"></div>
-                    <span class="btn-text">SIGN IN</span>
+                    <span class="btn-text">LOGIN</span>
                     <div class="btn-loader">
                         <svg class="loader-circle" viewBox="0 0 50 50">
                             <circle class="loader-path" cx="25" cy="25" r="12" fill="none" stroke="currentColor" stroke-width="3"/>
