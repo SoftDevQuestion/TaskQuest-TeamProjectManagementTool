@@ -165,6 +165,68 @@ We built Task Quest because:
       </div>
     </section>
     <!-- ========================= about style-4 end ========================= -->
+
+        <!-- ========================= pricing style-4 start ========================= -->
+    <section id="pricing" class="pricing-section pricing-style-4 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-5 col-lg-6">
+            <div class="section-title mb-60">
+              <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s">How People Use Task Quest ?</h3>
+              <p class="wow fadeInUp" data-wow-delay=".4s">Everyone has a different way of staying organized — and Task Quest fits them all.
+From students to professionals to anyone juggling daily life, Task Quest helps you manage your time, stay focused, and make every day feel a little lighter.</p>
+            </div>
+          </div>
+          <div class="col-xl-7 col-lg-6">
+            <div class="pricing-active-wrapper wow fadeInUp" data-wow-delay=".4s">
+              <div class="pricing-active">
+                <div class="single-pricing-wrapper">
+                  <div class="single-pricing">
+                    <h6>For Students</h6>
+                    <h4> 🎓</h4>
+                    <h3>Stay on top of your studies</h3>
+                    <ul>
+                      <li>Keep track of homework, projects, and exams</li>
+                      <li>Plan study sessions with smart reminders</li>
+                      <li>Balance school and free time with ease</li>
+                    </ul>
+                    <a href="Login.aspx" class="button radius-30">Get Organized</a>
+                  </div>
+                </div>
+                <div class="single-pricing-wrapper">
+                  <div class="single-pricing">
+                    <h6>For Professionals</h6>
+                    <h4>💼</h4>
+                    <h3>Manage work like a pro</h3>
+                    <ul>
+                      <li>Organize your tasks and meetings in one place</li>
+                      <li>Prioritize what really matters and plan for that</li>
+                      <li>Boost focus and productivity every day</li>
+                    </ul>
+                    <a href="Login.aspx"  class="button radius-30">Start Now</a>
+                  </div>
+                </div>
+                <div class="single-pricing-wrapper">
+                  <div class="single-pricing">
+                    <h6>For Everyday Life</h6>
+                    <h4>🏠</h4>
+                    <h3>Simplify your routine</h3>
+                    <ul>
+                      <li>Create to-do lists for daily chores or goals</li>
+                      <li>Build positive habits and stay consistent</li>
+                      <li>Feel good checking things off your list</li>
+                    </ul>
+                    <a href="Login.aspx"  class="button radius-30">Try It Today</a>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================= pricing style-4 end ========================= -->
         
     <!-- ========================= contact-style-3 start ========================= -->
     <section id="contact" class="contact-section contact-style-3">
