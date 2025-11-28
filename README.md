@@ -4,6 +4,25 @@
 <img src="./ReadmeFiles/ToDo.gif">
   
 
+<h2> About us 👥</h2>
+<div align="ltr" width="100%">
+ <p style="color:blue">
+ We are the team behind Task Quest, a group of software enthusiasts passionate about creating smart and simple tools to make everyday life more organized. With a background in software development, we aim to turn productivity into something enjoyable and easy to achieve. 
+</p>
+<br>
+ <p>
+We built Task Quest because:
+<br>
+💬 We believe staying organized shouldn’t feel complicated — it should feel empowering.<br>
+🤔 We wanted to help people stay focused and motivated on their daily goals.<br>
+🌱 We love building tools that bring structure, clarity, and a bit of fun to everyday tasks.<br><br><br>
+
+  
+ </p>
+
+</div>
+
+
 
 <h2>Connect with us 🔗</h2>
 
