@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="TaskQuest.SignUp" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="TaskQuest.SignUp" %>
 
 <!DOCTYPE html>
 
@@ -29,6 +29,16 @@
                 
                 <div class="form-group">
                     <div class="input-wrapper">
+                        <input type="text" id="username" name="username" required autocomplete="username">
+                        <label for="username">Username</label>
+                        <div class="input-line"></div>
+                        <div class="ripple-container"></div>
+                    </div>
+                    <span class="error-message" id="usernameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-wrapper">
                         <input type="email" id="email" name="email" required autocomplete="email">
                         <label for="email">Email</label>
                         <div class="input-line"></div>
@@ -52,6 +62,16 @@
                         <div class="ripple-container"></div>
                     </div>
                     <span class="error-message" id="passwordError"></span>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <input type="password" id="confirmPassword" name="confirmPassword" required autocomplete="new-password">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <div class="input-line"></div>
+                        <div class="ripple-container"></div>
+                    </div>
+                    <span class="error-message" id="confirmPasswordError"></span>
                 </div>
 
                 <div class="form-options">
