@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Web.Configuration;
@@ -38,17 +38,27 @@ namespace TaskQuest
                 {
                     conn.Open();
 
-                    // Check if user exists
-                    string checkQuery = "SELECT COUNT(*) FROM Users WHERE Email = @Email OR Username = @Username";
-                    SqlCommand checkCmd = new SqlCommand(checkQuery, conn);
-                    checkCmd.Parameters.AddWithValue("@Email", email);
-                    checkCmd.Parameters.AddWithValue("@Username", username);
+                    // Check if Email exists
+                    string checkEmailQuery = "SELECT COUNT(*) FROM Users WHERE Email = @Email";
+                    SqlCommand checkEmailCmd = new SqlCommand(checkEmailQuery, conn);
+                    checkEmailCmd.Parameters.AddWithValue("@Email", email);
+                    int emailCount = (int)checkEmailCmd.ExecuteScalar();
 
-                    int count = (int)checkCmd.ExecuteScalar();
-
-                    if (count > 0)
+                    if (emailCount > 0)
                     {
-                        Response.Write("<script>alert('User already exists!');</script>");
+                        Response.Write("<script>alert('This Email is already registered!');</script>");
+                        return;
+                    }
+
+                    // Check if Username exists
+                    string checkUserQuery = "SELECT COUNT(*) FROM Users WHERE Username = @Username";
+                    SqlCommand checkUserCmd = new SqlCommand(checkUserQuery, conn);
+                    checkUserCmd.Parameters.AddWithValue("@Username", username);
+                    int userCount = (int)checkUserCmd.ExecuteScalar();
+
+                    if (userCount > 0)
+                    {
+                        Response.Write("<script>alert('This Username is already taken!');</script>");
                         return;
                     }
 
@@ -56,7 +66,6 @@ namespace TaskQuest
                     string passwordHash = HashPassword(password);
 
                     // Insert User
-                    // Assuming columns: Username, Email, PasswordHash, CreatedAt
                     string insertQuery = "INSERT INTO Users (Username, Email, PasswordHash, CreatedAt) VALUES (@Username, @Email, @PasswordHash, @CreatedAt)";
                     SqlCommand insertCmd = new SqlCommand(insertQuery, conn);
                     insertCmd.Parameters.AddWithValue("@Username", username);
